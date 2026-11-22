@@ -186,3 +186,28 @@ frontend/
 docker-compose.yml
 ```
 
+
+
+
+## How I used AI
+
+AI tools were used in the development of this project, in accordance with the assessment guidelines.
+
+### Tool Used
+- **Claude (Anthropic):** Used as a coding assistant to generate the initial implementation of the backend, React frontend, test suite, Docker configuration, and README.
+
+### Verification & Testing
+The following checks were performed:
+
+- ✅ Automated test suite — **40 tests passed**
+- ✅ Headless browser testing — all three views tested against the real API
+- ✅ Docker Compose configuration validation — `docker compose config`
+
+### Limitations
+The Docker images were not built in the generation environment. Therefore, a full Docker build and runtime verification remain pending.
+
+To verify the Docker setup locally, run:
+
+```bash
+docker compose up --build
+```
