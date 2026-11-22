@@ -64,7 +64,9 @@ function AddCinemaForm({ onCreated }) {
             onChange={(e) => setSizes(e.target.value)}
             required
             placeholder="2, 5"
-            inputMode="numeric"
+            inputMode="text"
+            pattern="[0-9,\\s]+"
+            autoComplete="off"
           />
         </label>
       </div>
